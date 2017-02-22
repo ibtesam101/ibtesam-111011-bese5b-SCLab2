@@ -20,8 +20,10 @@ public class itTester {
 		mat3.add(new ArrayList<Integer>(){{add(5);add(5);}});
 		mat3.add(new ArrayList<Integer>(){{add(10);add(10);}});
 		
+		List<List<Integer>> mat3 = new ArrayList<List<Integer>>();
+		mat3.add(new ArrayList<Integer>(){{add(5);add(5);}});
+		mat3.add(new ArrayList<Integer>(){{add(10);add(10);}});
+		
 		assertEquals(mat3, iM.multiply(mat1, mat2));
-		
-		
 	}
 }

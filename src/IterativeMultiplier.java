@@ -7,6 +7,12 @@ public class IterativeMultiplier {
 	public List<List<Integer>> multiply(List<List<Integer>> a, List<List<Integer>> b){
 		List<List<Integer>> product= new ArrayList<List<Integer>>();
 		
+		if(a==null || b == null)
+			return null;
+		
+		if(a.size()!= b.get(0).size())
+			return null;
+		
 		for(int i=0; i<a.size(); i++){
 			product.add(new ArrayList<Integer>());
 			for(int j=0; j<b.get(0).size(); j++){
